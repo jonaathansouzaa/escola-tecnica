@@ -4,6 +4,7 @@ import com.escola.escolatecnica.modelos.Aluno;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.Null;
+import java.util.List;
 
 @Service
 public class AlunoService {
@@ -20,5 +21,9 @@ public class AlunoService {
         }
 
         return alunoRepository.save(aluno);
+    }
+
+    public List<Aluno> findByIds(List<Long> idAlunos) {
+        return null;
     }
 }
