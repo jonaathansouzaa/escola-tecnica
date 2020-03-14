@@ -1,0 +1,16 @@
+
+spring:
+  jpa:
+    database-platform: mysql
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/escola-tecnica?verifyServerCertificate=false&useSSL=true
+    username: root
+    password:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    platform: mysql
